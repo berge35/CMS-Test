@@ -7,22 +7,23 @@ const MathematicsDegrees = ['Physics', 'Engineering', 'Mathematics'];
 
 //Allow user to select a degree once type is filled out
 function unlockDegrees(index){
-    document.getElementById("degree").disabled = false;
+    var degreeDropDown = document.getElementById("degree");
+    degreeDropDown.disabled = false;
     switch (index){
         case 1: {
-            document.getElementById("degree").options = addList(ScienceDegrees);
+            degreeDropDown.options = addList(ScienceDegrees);
             break;
         }
         case 2: {
-            document.getElementById("degree").options = addList(BusinessDegrees);
+            degreeDropDown.options = addList(BusinessDegrees);
             break;
         }
         case 3: {
-            document.getElementById("degree").options = addList(ArtsDegrees);
+            degreeDropDown.options = addList(ArtsDegrees);
             break;
         }
         case 4: {
-            document.getElementById("degree").options = addList(MathematicsDegrees);
+            degreeDropDown.options = addList(MathematicsDegrees);
             break;
         }
         default: {
