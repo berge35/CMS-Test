@@ -1,0 +1,162 @@
+body {
+    background-image: url(Assets/background-S.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    margin-top: 5vh;
+    width: 80vw;
+    height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+}
+
+#heading {
+    text-align: center;
+}
+
+label{
+    padding-left: 10%;
+}
+
+select, input {
+    font-size: .9rem;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px 0px 0px;
+    width: 80%;
+    
+}
+
+select {
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+select:invalid { color: gray; }
+
+select:disabled {
+    background-color: lightgrey;
+}
+
+.row{
+    width: 80%;
+    padding-left: 10%;
+}
+
+label.col{
+    padding: 0;
+    padding-left: 0;
+}
+
+.last{
+    margin-left: 34%;
+}
+
+.half{
+    width: 39%;
+    margin-left: 10%;
+}
+
+input.col{
+    display: inline;
+    width: 49%; 
+}
+
+.address{
+    font-size: .7rem;
+}
+
+.cbtn{
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+#more{
+    background-color: #2773cb;
+}
+
+#apply{
+    background-color: #00aa70;
+}
+
+p {
+    font-size: .6rem;
+    color: #a6adad;
+}
+
+h4 {
+    overflow: hidden;
+    text-align: center;
+    color: #a6adad;
+   }
+   h4:before,
+   h4:after {
+    background-color: #a6adad;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   h4:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   h4:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+ /*Screens larger than 425px width*/
+ @media screen and (min-width: 425px) {
+    body {
+        background-image: url(Assets/background-M.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .container{
+        width: 60vw;
+    }
+    .address{
+        margin-left: 20%;
+    }
+}
+
+ /*Screens larger than 767px width*/
+ @media screen and (min-width: 767px) {
+    .container{
+        width: 55vw;
+    }
+    .address{
+        margin-left: 20%;
+    }
+}
+
+/*Screens larger than 1023px width*/
+@media screen and (min-width: 1023px) {
+    body {
+        background-image: url(Assets/background.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .container{
+        width: 50vw;
+    }
+}
+
+/*Screens larger than 1439px width*/
+@media screen and (min-width: 1439px) {
+    .container{
+        width: 30vw;
+    }
+}
