@@ -55,12 +55,7 @@ label.col{
 }
 
 .last{
-    margin-left: 34%;
-}
-
-.half{
-    width: 39%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 input.col{
@@ -117,8 +112,8 @@ h4 {
     margin-right: -50%;
    }
 
- /*Screens larger than 425px width*/
- @media screen and (min-width: 425px) {
+ /*Screens larger than 535px width*/
+ @media screen and (min-width: 535px) {
     body {
         background-image: url(Assets/background-M.jpg);
         background-repeat: no-repeat;
@@ -129,6 +124,9 @@ h4 {
     }
     .address{
         margin-left: 20%;
+    }
+    .last{
+        margin-left: 34%;
     }
 }
 
