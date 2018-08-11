@@ -9,9 +9,10 @@ body {
 .container{
     margin: auto;
     margin-top: 5vh;
-    width: 80vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: white;
 }
 
@@ -112,6 +113,13 @@ h4 {
     margin-right: -50%;
    }
 
+/* Screens larger than 350 px width */
+@media screen and (min-width: 350px){
+    .container{
+        width: 80vw;
+        height: 90vh;
+    }
+}
  /*Screens larger than 535px width*/
  @media screen and (min-width: 535px) {
     body {
